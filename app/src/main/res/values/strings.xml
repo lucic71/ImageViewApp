@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageViewApp</string>
+    <string name="button_name">Fetch Photo</string>
+</resources>
