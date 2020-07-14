@@ -16,14 +16,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener { openPhotoActivity() }
+        binding.button.setOnClickListener {
 
-    }
+            val intent = Intent(this, EditPhotoActivity::class.java)
+            startActivity(intent)
 
-    private fun openPhotoActivity() {
-
-        val intent = Intent(this, PrintPhotoActivity::class.java)
-        startActivity(intent)
+        }
 
     }
 }
